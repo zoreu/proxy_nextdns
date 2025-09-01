@@ -91,7 +91,7 @@ async def handle_client(reader, writer, nextdns_id):
                 "HTTP/1.1 200 OK\r\n"
                 "Content-Type: text/html\r\n"
                 "Connection: close\r\n\r\n"
-                "<html><body><h1>BOT RUNNING</h1></body></html>"
+                "<html><body><h1>PROXY DNS</h1></body></html>"
             )
             writer.write(response.encode())
             await writer.drain()
